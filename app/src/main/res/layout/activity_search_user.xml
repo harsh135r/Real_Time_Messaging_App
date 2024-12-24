@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchUserActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color"
+        android:padding="10dp"
+        android:id="@+id/main_toolbar">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search User"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/backButton"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/search"
+            android:id="@+id/backButton"
+            android:src="@drawable/back_button_icon"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_toolbar"
+        android:layout_margin="10dp"
+        android:id="@+id/searchUser_layout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_roundedcorners"
+            android:layout_margin="10dp"
+            android:hint="Username"
+            android:padding="10dp"
+            android:elevation="5dp"
+            android:layout_toLeftOf="@id/search_user_button"
+            android:id="@+id/searchUser_nameInput"/>
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/search"
+            android:src="@drawable/user_search_icon"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/search_user_button"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:layout_margin="10dp"
+            app:tint="@color/primary_color" />
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchUser_layout"
+        android:padding="10dp"
+        android:id="@+id/searchUser_recyclerView"/>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "899802039668",
+    "project_id": "realtimemessagingapp-backend",
+    "storage_bucket": "realtimemessagingapp-backend.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899802039668:android:0c4c79a5bcea5987ab1821",
+        "android_client_info": {
+          "package_name": "com.example.realtimemessaging"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPQTWkkTbkpxyX0rNxMfWS5h0m-NF7sK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
